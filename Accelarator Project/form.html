@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+     <meta charset="UTF-8">
+     
+    <link rel="stylesheet" href="./style2.css">
+   
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    </head>
+    <body>
+
+        <label >
+            <input type="file" id="file"> 
+ 
+          <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+    
+ 
+     function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}  
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Qlfrtip'
+    });
+});
+</script> 
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Information</title>
+  	<meta charset="UTF-8">	
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+     var dataSet = [
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Accelarator Project</a>','xxxx','New','2022/11/23','image'],
+ 
+    
+];
+
+ 
+$(document).ready(function () {
+    $('#example').DataTable({
+        data: dataSet,
+        columns: [
+            { title:'Project Name' },
+            { title: 'Creation date' },
+            { title: 'type' },
+        ],
+
+    });
+    xmlhttp.send();
+});
+    			 
+    		 
+    	 
+    
+      
+    </script>  
+  </head>
+  <body>
+    <div style="margin:100px" >
+      <table style="width:100%">
+<table id="example" class="display" style="width:100%">
+
+</table>
+</table>
+</div>
+</div>
+</div>
+
+    <table id="example" class="display" style="width:100%">
+    
+    </table>
+  </div>
+  </body>
+</html> 
+
+    
