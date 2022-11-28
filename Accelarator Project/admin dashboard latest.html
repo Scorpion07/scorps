@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+     <meta charset="UTF-8">
+     
+    <link rel="stylesheet" href="./style2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    </head>
+    <body>
+      
+ <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-grid-alt'></i>
+      <span class="logo_name">Enfuse Solutions</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+			
+			<section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Welcome Admin</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="./images.png" alt="">
+        <span class="admin_name">My Profile	</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Work Status</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">              
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+           
+            .modal {
+              display: none;
+              position: fixed; 
+              z-index: 1; 
+              padding-top: 100px; 
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%; 
+              overflow: auto; 
+              background-color: rgb(0,0,0); 
+              background-color: rgba(0,0,0,0.4); 
+            }
+            
+           
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+            }
+            
+            
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
+            </head>
+            <body>
+            
+              <div class="box-topic">Project Upload</div>
+            
+            
+            <button id="myBtn">Upload</button>
+            
+            
+            <div id="myModal" class="modal">
+            
+              
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <table id="productTable" class="table table-bordered table-condensed table-striped">
+                  <thead>
+                      <tr>
+                          <th>Project Name</th>
+                          <th>Creation Date</th>
+                          <th>Type</th>
+                      </tr>
+                  </thead>
+              </table>
+              <button type="button" 
+        id="updateButton" 
+        class="btn btn-primary" 
+        
+        <button type="button" 
+        id="Upload" 
+        class="btn btn-primary" 
+        onclick="productUpdate();">Add</button> -->
+        <script type="text/javascript">
+          function productUpdate() {
+              
+          }
+<!--'<a href="file:///C:/Users/Anish.Tummala/Desktop/Updated%20Code/editor%20Page.html" target="_blank">HDFC</a>','Sai','In progress','2022/11/23','video'],-->
+      </script>
+        <label >
+          <input type="file" id="file">
+                
+              </div>
+            
+            </div>
+            
+            <script>
+           
+            var modal = document.getElementById("myModal");
+            
+            
+            var btn = document.getElementById("myBtn");
+            
+            
+            var span = document.getElementsByClassName("close")[0];
+            
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+            </body>
+            </html>
+            
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Document</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Speech to text</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+          <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+    
+ 
+     function myFunction() {
+  
+  var checkBox = document.getElementById("myCheck");
+ 
+  var text = document.getElementById("text");
+
+  
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}  
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Qlfrtip'
+    });
+});
+</script> 
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Information</title>
+  	<meta charset="UTF-8">	
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+     var dataSet = [
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Accelarator Project</a>','Divya','New','2022/11/23','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe Project</a>','Lakshmi','In progress','2022/11/23','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL Project</a>','Surabhi','on review ','2022/11/23','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC Project</a>','Manikanta sai','In progress','2022/11/23','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">DELL</a>','Balu','In progress','2022/11/23','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Sunmicro</a>','Janu','In progress','2022/11/23','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a>','sam','In progress','2022/11/23','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Kodac</a>','Suma','In progress','2022/11/23','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC</a>','Madhu','In progress','2023/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">DELL</a>','Sonu','In progress','2022/11/23','image'],
+
+    ['<a href="D:/Accelator%20Project/Accelarator%20Project/Editor.html" target="_blank">DELL</a>','Pal','In progress','2022/11/22','video'],
+
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">DELL</a>','Sam','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC</a>','Mani','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC</a>','Sam ','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a>','Tena','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">SUN micro</a>','Pal','pending','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a> ','Devi','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Hcl</a>','Balu','on review','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC</a>','Janu','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a>','madhu','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a> ','Sonu','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a> ','Mala','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank"> HDFC </a>','Sonu','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">MicroSoft</a>','pal','In progress','2022/11/22','video'],
+
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL </a>','Sara','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a>','Madhu','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HDFC</a>','Syam','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a>','Tena','In progress','2022/11/22','video'],
+
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a>','Prakash','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Accelarator</a>','balu','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Adobe</a>','Baskar','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Brilio</a>','aadi','In progress','2022/11/22','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a>','omkar','In progress','2022/11/22','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Brilieo</a>	','Suma','In progress','2022/11/22','video'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">Cap Gemini</a>','Mani','In progress','2022/11/23','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a>','Sonu','In progress','2022/11/23','image'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Accelarator%20Project/editor%20Page.html" target="_blank">HCL</a>','sam','In progress','2022/11/23','document(pdf)'],
+    ['<a href="file:///C:/Users/Anish.Tummala/Desktop/Updated%20Code/editor%20Page.html" target="_blank">HDFC</a>','Sai','In progress','2022/11/23','video'],
+    
+];
+ 
+$(document).ready(function () {
+    $('#example').DataTable({
+        data: dataSet,
+        columns: [
+            { title:'Project Name' },
+            { title: 'Tagger Name' },
+           // { title: 'Office' },
+            { title: 'status' },
+            { title: 'Creation date' },
+            { title: 'type' },
+        ],
+
+    });
+    xmlhttp.send();
+});
+
+function updateTable(){
+  $('#example').DataTable({
+        data: dataSet,
+        columns: [
+            { title:'Project Name' },
+            { title: 'Tagger Name' },
+           // { title: 'Office' },
+            { title: 'status' },
+            { title: 'Creation date' },
+            { title: 'type' },
+        ],
+
+    });
+    xmlhttp.send();
+}
+    			 
+    		 
+    	 
+    
+      
+    </script>  
+  </head>
+  <body>
+    <div style="margin:100px" >
+      <table style="width:100%">
+<table id="example" class="display" style="width:100%">
+
+</table>
+</table>
+</div>
+</div>
+</div>
+
+    <table id="example" class="display" style="width:100%">
+    
+    </table>
+  </div>
+  </body>
+</html> 
+
+    

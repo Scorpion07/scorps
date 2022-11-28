@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+     <meta charset="UTF-8">
+     
+    <link rel="stylesheet" href="./style2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+  div {margin: 60px 10px}
+
+</style>
+    </head>
+    <body>
+      <div margin: 60px 10px>
+
+
+     
+      
+	 <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-grid-alt'></i>
+      <span class="logo_name">Enfuse Solutions</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+        <!--<form>-->
+            
+            <!--<h1>Admin</h1>
+            <select name="Admin">
+                <option value=" None">None</option>
+                <option value=" Tagger">Tagger</option>
+                <option value=" Reviewer">Reviewer</option>
+            </select>-->
+			
+			<section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Welcome Admin</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="./images.png" alt="">
+        <span class="admin_name">My Profile	</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Work Status</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Image & video</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Document</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Speech to text</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+          <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+    
+ 
+     function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}  
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Qlfrtip'
+    });
+});
+</script> 
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Information</title>
+  	<meta charset="UTF-8">	
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+     var dataSet = [
+    ['alexander','System Architect','india','In progress','2022/11/22','image'],
+    ['alexander','Team lead','New York','In progress','2022/11/22','vedio'],
+    ['Neytiri','Project manager','	Singapore','In progress','2022/11/22','document(pdf)'],
+    ['Zoe saldana','UI developer','Sydney','In progress','2022/11/22','image'],
+    ['Jake Sully','Backend developer','india','In progress','2022/11/22','vedio'],
+    ['Sam Worthinton','Junior Technical Author','	Singapore','In progress','2022/11/22','document(pdf)'],
+    ['Ronal','Office Manager','india','In progress','2022/11/22','image'],
+    ['Kate winslet','Support Lead','New York','In progress','2022/11/22','vedio'],
+    ['Colonel Quaritch','Marketing Designer','Sydney','In progress','2022/11/22','document(pdf)'],
+    ['Stephen Lang','Software Engineer','india','In progress','2022/11/22','image'],
+
+    ['Neteyam','Post-Sales support','New York','In progress','2022/11/22','vedio'],
+
+    ['Doris Wilder','Sales assisant','Sydney','In progress','2022/11/22','document(pdf)'],
+    ['Fiona Green','Marketing Designer','india','In progress','2022/11/22','vedio'],
+    ['Garrett Winters','System Architect','New York','In progress','2022/11/22','image'],
+    ['Gavin Cortez','Team lead','india','In progress','2022/11/22','vedio'],
+    ['Gavin Joyce','Project manager','Sydney','In progress','2022/11/22','document(pdf)'],
+    ['Gloria Little ','UI developer','india','In progress','2022/11/22','image'],
+    ['Haley Kennedy','Backend developer','New York','In progress','2022/11/22','vedio'],
+    ['Herrod Chandler','Junior Technical Author','india','In progress','2022/11/22','document(pdf)'],
+    ['Jena Gaines','Office Manager','Sydney','In progress','2022/11/22','image'],
+    ['Jennifer Chang ','Support Lead','india','In progress','2022/11/22','vedio'],
+    ['Martena Mccray ','Marketing Designer','New York','In progress','2022/11/22','document(pdf)'],
+    ['Michael Silva ','Software Engineer','india','In progress','2022/11/22','image'],
+    ['Michelle House','Post-Sales support','Sydney','In progress','2022/11/22','vedio'],
+
+    ['Paul Byrd ','Sales assisant','Tokyo','In progress','2022/11/22','document(pdf)'],
+    ['Prescott Bartlett','Marketing Designer','india','In progress','2022/11/22','vedio'],
+    ['Quinn Flynn','System Architect','New York','In progress','2022/11/22','image'],
+    ['Rhona Davidson','Team lead','india','In progress','2022/11/22','vedio'],
+
+    ['Airi Satou','Project manager','india','In progress','2022/11/22','document(pdf)'],
+    ['Angelica Ramos','UI developer','Tokyo','In progress','2022/11/22','image'],
+    ['Ashton Cox','Backend developer','New York','In progress','2022/11/22','vedio'],
+    ['Bradley Greer','Junior Technical Author','Singapore','In progress','2022/11/22','document(pdf)'],
+    ['Brenden Wagner','Office Manager','Singapore','In progress','2022/11/22','image'],
+    ['Brielle Williamson	','Support Lead','india','In progress','2022/11/22','vedio'],
+    ['Caesar Vance','Marketing Designer','Singapore','In progress','2022/11/22','document(pdf)'],
+    ['Cedric Kelly','Software Engineer','Tokyo','In progress','2022/11/22','image'],
+    ['Charde Marshall','Post-Sales support','New York','In progress','2022/11/22','vedio'],
+    ['Colleen Hurst','Sales assisant','Singapore','In progress','2022/11/22','document(pdf)'],
+    ['Dai Rios','Marketing Designer','india','In progress','2022/11/22','vedio'],
+    
+];
+ 
+$(document).ready(function () {
+    $('#example').DataTable({
+        data: dataSet,
+        columns: [
+            { title: 'Name' },
+            { title: 'Project' },
+            { title: 'Office' },
+            { title: 'status' },
+            { title: 'date' },
+            { title: 'type' },
+        ],
+
+    });
+    xmlhttp.send();
+});
+    			 
+    		 
+    	 
+    
+      
+    </script>  
+  </head>
+  <body>
+    <table id="example" class="display" style="width:100%">
+    
+    </table>
+  </div>
+  </body>
+</html> 
+
+    

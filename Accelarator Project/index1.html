@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-grid-alt'></i>
+      <span class="logo_name">Enfuse Solutions</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Tagger</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Welcome</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="./images.png" alt="">
+        <span class="admin_name">Tagger</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Work Status</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Image & video</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Document</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Speech to text</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Upload</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Job</div>
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search' ></i>
+          </div>
+          <table class="salesdetails">
+            <tr class="details">
+              <th class="topic">Task Title</th>
+              <th class="topic">Customer ID</th>
+              <th class="topic">Status</th>
+              <th class="topic">Creation Time</th>
+            </tr>
+            <tr class="details">
+              <td><a href="#">task 1</a></td>
+              <td><a href="#">187652</a></td>
+              <td><a href="#">Available</a></td>
+              <td><a href="#">November 04,2022 10:00 IST</a></td>
+            </tr>
+            <tr class="details">
+              <td><a href="#">task 2</a></td>
+              <td><a href="#">123652</a></td>
+              <td><a href="#">Available</a></td>
+              <td><a href="#">November 23,2022 05:00 IST</a></td>
+            </tr>
+            <tr class="details">
+              <td><a href="#">task 3</a></td>
+              <td><a href="#">187652</a></td>
+              <td><a href="#">pending</a></td>
+              <td><a href="#">November 12,2022 13:00 IST</a></td>
+            </tr>
+            <tr class="details">
+              <td><a href="#">task 4</a></td>
+              <td><a href="#">183652</a></td>
+              <td><a href="#">In progress</a></td>
+              <td><a href="#">November 14,2022 23:00 IST</a></td>
+            </tr>
+          </table>
+          <div class="button">
+            <a href="#">Start Working</a>
+          </div>
+        </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
